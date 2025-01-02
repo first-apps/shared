@@ -1,0 +1,29 @@
+.navbar {
+  @apply twcss-py-5 twcss-px-10 twcss-bg-white;
+}
+
+.navigation-trigger {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    @apply twcss-flex twcss-flex-col twcss-fixed twcss-w-screen twcss-h-screen;
+    top: -100vh;
+    left: -100vw;
+  }
+  .open {
+    top: 0;
+    left: 0;
+  }
+
+  .open .navigation-trigger {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .navigation-trigger {
+    @apply twcss-flex twcss-justify-between twcss-px-3 twcss-py-2;
+  }
+}

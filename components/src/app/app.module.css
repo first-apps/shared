@@ -1,0 +1,6 @@
+.description {
+  @apply twcss-text-pretty;
+}
+.input {
+  @apply twcss-py-4 !important;
+}

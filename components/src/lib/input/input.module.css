@@ -1,0 +1,23 @@
+.container {
+  background-color: var(--light-grey);
+  width: fit-content;
+  @apply twcss-flex twcss-flex-row twcss-items-center twcss-border-2 twcss-border-transparent;
+}
+.input {
+  @apply twcss-flex-auto twcss-rounded-sm twcss-outline-none twcss-px-3 twcss-py-1 twcss-border-none;
+}
+.container:focus-within {
+  @apply twcss-border-neutral-900;
+}
+.submit {
+  @apply twcss-self-stretch twcss-my-0;
+}
+.left {
+  @apply twcss-pl-2;
+}
+.right {
+  @apply twcss-pr-2;
+}
+.submit-right {
+  @apply twcss-ml-2;
+}

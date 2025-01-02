@@ -1,0 +1,23 @@
+{
+  "name": "utils",
+  "version": "1.0.2",
+  "description": "Shared utils, types and so on for stream app",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/first-apps/shared.git"
+  },
+  "author": {
+    "name": "dikshit-n",
+    "email": "dikshitkumarn@gmail.com"
+  },
+  "scripts": {
+    "build:lib": "rm -rf dist && tsc",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}

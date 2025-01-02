@@ -1,0 +1,7 @@
+.nav-item {
+  @apply twcss-flex twcss-flex-row twcss-align-middle;
+}
+
+.nav-item a {
+  @apply twcss-py-2 twcss-px-4;
+}

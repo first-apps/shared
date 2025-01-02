@@ -1,0 +1,38 @@
+{
+  "name": "@first-apps/shared",
+  "version": "1.0.0",
+  "description": "reusables (components, types, utilities) for first-apps",
+  "main": "index.js",
+  "exports": {
+    "./components": {
+      "import": "./components/dist/cjs/index.js",
+      "types": "./components/dist/index.d.ts"
+    },
+    "./service": {
+      "import": "./utils/dist/service/index.js",
+      "types": "./utils/dist/service/index.d.ts"
+    },
+    "./types": {
+      "import": "./utils/dist/types/index.js",
+      "types": "./utils/dist/types/index.d.ts"
+    }
+  },
+  "files": [
+    "components/dist/",
+    "utils/dist/"
+  ],
+  "repository": {
+    "url": "https://github.com/first-apps/shared.git"
+  },
+  "author": {
+    "name": "dikshit-n",
+    "email": "dikshitkumarn@gmail.com"
+  },
+  "scripts": {
+    "build:lib:components": "rm -rf components/dist && cd ~/components && yarn build:lib",
+    "build:lib:utils": "rm -rf components/dist && cd ~/utils && yarn build:lib",
+    "build:lib": "yarn build:components && yarn build:utils",
+    "publish": "npm publish --access public --tag experimental",
+    "link:local": "npm link"
+  }
+}
