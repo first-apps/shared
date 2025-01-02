@@ -29,9 +29,7 @@
     "email": "dikshitkumarn@gmail.com"
   },
   "scripts": {
-    "build:lib:components": "rm -rf components/dist && cd ~/components && yarn build:lib",
-    "build:lib:utils": "rm -rf components/dist && cd ~/utils && yarn build:lib",
-    "build:lib": "yarn build:components && yarn build:utils",
+    "build:lib": "node build.lib.js",
     "publish": "npm publish --access public --tag experimental",
     "link:local": "npm link"
   }
