@@ -1,8 +1,8 @@
 {
   "name": "@first-apps/shared",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "reusables (components, types, utilities) for first-apps",
-  "main": "index.js",
+  "main": "index.tsx",
   "exports": {
     "./components": {
       "import": "./components/dist/cjs/index.js",
@@ -30,7 +30,7 @@
   },
   "scripts": {
     "build:lib": "node build.lib.js",
-    "publish": "npm publish --access public --tag experimental",
+    "publish": "npm publish --access public --tag latest",
     "link:local": "npm link"
   }
 }
