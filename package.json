@@ -1,6 +1,6 @@
 {
   "name": "@first-apps/shared",
-  "version": "1.1.2",
+  "version": "1.1.6",
   "description": "reusables (components, types, utilities) for first-apps",
   "main": "index.tsx",
   "exports": {
@@ -28,6 +28,12 @@
     "name": "dikshit-n",
     "email": "dikshitkumarn@gmail.com"
   },
+  "keywords": [
+    "react",
+    "components",
+    "first-apps",
+    "utils"
+  ],
   "scripts": {
     "build:lib": "node build.lib.js",
     "publish": "npm publish --access public --tag latest",
