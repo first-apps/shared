@@ -1,6 +1,6 @@
 {
   "name": "@first-apps/shared",
-  "version": "1.1.6",
+  "version": "1.1.14",
   "description": "reusables (components, types, utilities) for first-apps",
   "main": "index.tsx",
   "exports": {

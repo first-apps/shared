@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./app.module.css";
-import "./index.css";
 import { Button, Input, NavItem } from "../lib";
 import { Navbar } from "src/lib/navbar";
 import { Container } from "src/lib/container";

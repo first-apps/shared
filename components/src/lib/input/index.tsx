@@ -1,3 +1,5 @@
+"use client";
+
 import { IInputProps } from "./input.types";
 import globalStyles from "../index.module.css";
 import styles from "./input.module.css";

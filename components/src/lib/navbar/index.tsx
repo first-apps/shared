@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import globalStyles from "../index.module.css";
 import styles from "./navbar.module.css";

@@ -5,6 +5,7 @@ import flatDts from "rollup-plugin-flat-dts";
 import terser from "@rollup/plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
+import cssnano from "cssnano";
 
 export default [
   {
@@ -32,8 +33,15 @@ export default [
       resolve(),
       commonjs(),
       postcss({
-        modules: true,
-        include: "./src/lib/**/*.css",
+        modules: {
+          auto: (resourcePath) => resourcePath.endsWith(".module.css"), // enable CSS modules for *.module.css
+          generateScopeName: "[hash:base64:6]", // customize generated css classnames
+        },
+        inject: true,
+        extract: false,
+        minimize: true,
+        plugins: [cssnano()],
+        include: ["./src/lib/**/*.css"],
       }),
       typescript({
         tsconfig: "./tsconfig.json",
@@ -41,7 +49,7 @@ export default [
       }),
       terser(),
     ],
-    external: ["react", "react-dom"],
+    external: ["react", "react-dom", "react/jsx-runtime"],
   },
   {
     input: "dist/cjs/index.js",
