@@ -1,6 +1,6 @@
-.description {
+.fa-class-description {
   @apply twcss-text-pretty;
 }
-.input {
+.fa-class-input {
   @apply twcss-py-4 !important;
 }

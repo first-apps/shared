@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--light-grey);
+  background-color: var(--fa-light-grey);
   width: fit-content;
   @apply twcss-flex twcss-flex-row twcss-items-center twcss-border-2 twcss-border-transparent;
 }

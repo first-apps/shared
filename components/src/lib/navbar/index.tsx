@@ -14,13 +14,13 @@ export const Navbar: React.FC<INavbarProps> = (props) => {
 
   const Trigger = (
     <Button
-      className={styles["navigation-trigger"]}
+      className={[styles["navigation-trigger"]].filter((el) => el).join(" ")}
       onClick={() => setOpen((prev) => !prev)}
       icon={
         open ? (
-          <XMarkIcon className={globalStyles["default-icon-size"]} />
+          <XMarkIcon className={globalStyles["fa-class-default-icon-size"]} />
         ) : (
-          <Bars3Icon className={globalStyles["default-icon-size"]} />
+          <Bars3Icon className={globalStyles["fa-class-default-icon-size"]} />
         )
       }
     />
@@ -34,9 +34,9 @@ export const Navbar: React.FC<INavbarProps> = (props) => {
         {...rest}
         className={[
           styles.navbar,
-          row && globalStyles["flex-row"],
-          column && globalStyles["flex-column"],
-          alignCenter && globalStyles["align-center"],
+          row && globalStyles["fa-class-flex-row"],
+          column && globalStyles["fa-class-flex-column"],
+          alignCenter && globalStyles["fa-class-align-center"],
           open && styles.open,
           className,
         ]

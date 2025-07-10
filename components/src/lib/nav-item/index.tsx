@@ -10,8 +10,8 @@ export const NavItem: React.FC<INavItemProps> = (props) => {
       {...rest}
       className={[
         styles["nav-item"],
-        noMargin && globalStyles["no-margin"],
-        noPadding && globalStyles["no-padding"],
+        noMargin && globalStyles["fa-class-no-margin"],
+        noPadding && globalStyles["fa-class-no-padding"],
         className,
       ]
         .filter((el) => el)

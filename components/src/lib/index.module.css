@@ -1,114 +1,42 @@
 /* global styles */
 
 :root {
-  --white: #fafbff;
-  --black: #181b29;
-  --light-grey: #f2f2f2;
-  --button-color: var(--black);
-  --button-hover-color: #181b29c3;
-  --button-active-color: #181b29d7;
-  --button-text-color: var(--white);
+  --fa-white: #fafbff;
+  --fa-black: #181b29;
+  --fa-light-grey: #f2f2f2;
+  --fa-button-color: var(--fa-black);
+  --fa-button-hover-color: #181b29c3;
+  --fa-button-active-color: #181b29d7;
+  --fa-button-text-color: var(--fa-white);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-input {
-  color: var(--black);
-}
+/* Following styles will only work inside shared library package (not extended to app that depends on this package) */
 
-h1 {
-  font-size: 45px;
-  font-weight: bolder;
-}
-h2 {
-  font-size: 40px;
-  font-weight: bold;
-}
-h3 {
-  font-size: 35px;
-  font-weight: bold;
-}
-h4 {
-  font-size: 30px;
-  font-weight: 700;
-}
-h5 {
-  font-size: 25px;
-  font-weight: 600;
-}
-h6 {
-  font-size: 20px;
-  font-weight: 500;
-}
-input,
-p {
-  font-size: 14px;
-}
-input {
-  background-color: inherit;
-}
-
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 35px;
-    font-weight: bolder;
-  }
-  h2 {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  h3 {
-    font-size: 25px;
-    font-weight: bold;
-  }
-  h4 {
-    font-size: 20px;
-    font-weight: 700;
-  }
-  h5 {
-    font-size: 17px;
-    font-weight: 600;
-  }
-  h6 {
-    font-size: 14px;
-    font-weight: 500;
-  }
-  input,
-  p {
-    font-size: 12px;
-  }
-}
-
-.flex {
+.fa-class-flex {
   @apply twcss-flex;
 }
 
-.flex-row {
+.fa-class-flex-row {
   @apply twcss-flex twcss-flex-row;
 }
 
-.flex-column {
+.fa-class-flex-column {
   @apply twcss-flex twcss-flex-col;
 }
-.no-padding {
+.fa-class-no-padding {
   @apply twcss-p-0;
 }
-.no-margin {
+.fa-class-no-margin {
   @apply twcss-m-0;
 }
-.align-center {
+.fa-class-align-center {
   @apply twcss-items-center twcss-justify-center;
 }
 
-.full-width {
+.fa-class-full-width {
   width: 100% !important;
 }
 
-.default-icon-size {
+.fa-class-default-icon-size {
   @apply twcss-size-6;
 }

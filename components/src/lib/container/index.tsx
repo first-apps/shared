@@ -17,10 +17,10 @@ export const Container: React.FC<IContainerProps> = (props) => {
       {...rest}
       className={[
         styles.container,
-        flex && globalStyles.flex,
-        flexRow && globalStyles["flex-row"],
-        flexColumn && globalStyles["flex-column"],
-        alignCenter && globalStyles[`align-center`],
+        flex && globalStyles["fa-class-flex"],
+        flexRow && globalStyles["fa-class-flex-row"],
+        flexColumn && globalStyles["fa-class-flex-column"],
+        alignCenter && globalStyles[`fa-class-align-center`],
         className,
       ]
         .filter((el) => el)

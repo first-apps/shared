@@ -51,7 +51,7 @@ export const Input: React.FC<IInputProps> = (props) => {
       onSubmit={submit ? handleSubmit : undefined}
       className={[
         styles.container,
-        fullWidth && globalStyles["full-width"],
+        fullWidth && globalStyles["fa-class-full-width"],
         icon && position === "left" && styles.left,
         // TODO: make sure this overrides the previous class
         containerProps?.className,

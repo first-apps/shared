@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./app.module.css";
+import "../lib/index.module.css";
 import { Button, Input, NavItem } from "../lib";
 import { Navbar } from "src/lib/navbar";
 import { Container } from "src/lib/container";
@@ -27,7 +28,7 @@ function App() {
       </Button>
       <Input
         fullWidth
-        className={styles.input}
+        className={styles["fa-class-input"]}
         icon={<MagnifyingGlassIcon className="twcss-size-6" />}
         submit={{
           onSubmit: handleSubmit,
